@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Phonegap Meetup Vancouver</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!-- Title and intro -->
+				<section>
+					<div>
+					<a href="http://phonegap.com/" class="">
+						<img src="https://raw.github.com/phonegap/phonegap-start/master/www/img/logo.png" alt="Build Bot">
+					</a>
+					<a href="http://phonegap.com/" class="">
+						<img src="https://raw.github.com/apache/cordova-wp8/master/common/www/img/logo.png" alt="Cordova Bot">
+					</a>
+					</div>
+					<div class="container">
+		            	<p class="blink title">Command Line Interface</p>
+		            </div>
+					<p>
+						<small>Presentation by <a href="http://bennmapes.com">Benn Mapes</a> / <a href="http://twitter.com/bennmapes">@bennmapes</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Why the CLI?</h2>
+					<p> Because it's easy,</p>
+					<p> How easy? </p>
+					<img src="img/easyasshit.gif" alt="#EasyAsShit">
+					<p> 
+						<small> Thanks <a href="https://twitter.com/chews">@chews</a> </small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Hard Part</h2>
+						<p>
+							There are a few drawbacks to this simplified interface :
+						</p>
+						<ul>
+							<p class="grey fragment roll-in"> - Getting away from the stardard platform IDE's (this could also be a plus!) </p>
+							<p class="grey fragment roll-in"> - Debugging can be hard but there tools to help (ripple emulator). </p>
+							<p class="grey fragment roll-in"> - Cutomization of resources (icons, splashscreens etc), we're working on this. </p>
+							<p class="grey fragment roll-in"> - Using the config.xml to describe platform specific settings can be complicated. </p>
+						</ul>
+					</section>
+					<section>
+						<p> The more we use the cli the better it will get. </p>
+						<p class="grey">phonegap</p>
+						<a href="#/2">
+							<img src="img/phonegap-install.jpg" alt="Phonegap Install">
+						</a>
+						<p class="grey">corodva</p>
+						<a href="#/2">
+							<img src="img/cordova-install.jpg" alt="Cordova Install">
+						</a>
+					</section>
+					<section>
+						<p>Log any issues you find on Jira if they arn't already there</p>
+						<a href="https://issues.apache.org/jira/browse/CB">https://issues.apache.org/jira/browse/CB</a>
+					</section>
+				</section>
+
+				<section>
+					<h2> Token Beer Slide </h2>
+					<a href="#/2">
+						<img src="img/beer.jpg" alt="Beer">
+					</a>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Easy Part</h2>
+						<p>
+							Using the CLI we can build and run applications with just a few lines in the terminal.
+						</p>
+					</section>
+					<section>
+						<h3>Create</h3>
+						<p class="grey">phonegap</p>
+						<a href="#/3">
+							<img src="img/phonegap-create.jpg" alt="Phonegap Create">
+						</a>
+						<p class="grey">corodva</p>
+						<a href="#/3">
+							<img src="img/cordova-create.jpg" alt="Cordova Create">
+						</a>
+					</section>
+					<section>
+						<h3>Build</h3>
+						<p class="grey">phonegap</p>
+						<a href="#/3">
+							<img src="img/phonegap-cd.jpg" alt="Phonegap Cd">
+						</a>
+						<a href="#/3">
+							<img src="img/phonegap-build.jpg" alt="Phonegap Build">
+						</a>
+						<p class="grey">corodva</p>
+						<a href="#/3">
+							<img src="img/cordova-build.jpg" alt="Cordova Build">
+						</a>
+					</section>
+					<section>
+						<h3>Run</h3>
+						<p class="grey">phonegap</p>
+						<a href="#/3">
+							<img src="img/phonegap-run.jpg" alt="Phonegap Run">
+						</a>
+						<p class="grey">corodva</p>
+						<a href="#/3">
+							<img src="img/cordova-run.jpg" alt="Cordova Run">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>corodova-cli vs phonegap-cli</h2>
+						<p >
+							phonegap-cli :
+						</p>
+						<ul>
+							<p class="grey"> - require('cordova-cli') </p>
+							<p class="grey"> - require('phonegap-build-cli') </p>
+							<div class="gray">
+								<img height="100" width="100" src="img/bells.png">
+								<img height="100" width="100" class="none" src="img/plus.png">
+								<img height="100" width="100" src="img/whistle.png">
+							</div>
+						</ul>
+					</section>
+					<section>
+						<p class="grey">Local</p>
+						<a href="#/4">
+							<img src="img/phonegap-local.jpg" alt="Phonegap Local">
+						</a>
+					</section>
+					<section>
+						<p class="grey">Remote</p>
+						<a href="#/4">
+							<img src="img/phonegap-remote.jpg" alt="Phonegap Remote">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h1>Plugins</h1>
+					<a href="#/6">
+						<img src="img/cordova-plugin.jpg" alt="Cordova Plugin">
+					</a>
+					<p> Easy right? </p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h2>Questions?</h2>
+					<p>
+						<small>By Benn Mapes</small>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/leap/leap.js', async: true }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
